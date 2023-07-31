@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: #fff;
+    color: #181818;
+    line-height: 1.4;
+    font-family: 1.1rem;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    padding: 2rem;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* header */
+#main-header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 4rem;
+}
+
+#main-header h2 {
+    font-size: 3rem;
+}
+
+
+#main-header p {
+    margin-top: 0.5rem;
+}
+
+#main-header i {
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-info {
+    color: #a53860;
+    font-weight: 600;
+}
+
+.btn-info:hover {
+    color: #450920;
+    border-bottom: 2px solid #450920;
+}
+
+/* card */
+img {
+    width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1.5rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.card>div {
+    background: #f4f4f4;
+    padding: 4rem;
+}
+
+.card>div h3 {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: #006d77;
+    color: #fff;
+    padding: 0.7rem 1.7rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #71bbb5;
+}
+
+/* footer */
+#main-footer {
+    background: #181818;
+    padding: 2rem 0;
+}
+
+#main-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+#main-footer a {
+    color: #fff;
+    margin: 0 1rem;
+}
+
+#main-footer a:hover {
+    color: #a53860;
+}
+
+@media(max-width: 700px) {
+    #main-header h1 {
+        font-size: 2.7rem;
+    }
+
+    #main-header h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        display: block;
+    }
+}
